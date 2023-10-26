@@ -21,9 +21,9 @@
     to {
         opacity: 1;
     }
-  }
+}
 
-  body{
+body{
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     display: flex;
