@@ -1,47 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1 class="large-font">JavaScript Quiz</h1>
-        <button class="start-button">Start</button>
-        <button class="restart-button"> Restart </button>
-       
-    </header>
-    <main>
-        <section>
-            <div class="card questions">
-                <div class="large-font options">Let's Go!</div>
-            </div>
-        </section>
-
-        <section>
-            <div class="card results">
-                <div class="timer-container">         
-                    
-                
-                
-                <div class="card timer">
-                    <div class="timer-text"></div>
-                    <div class="large-font timer-count">10</div>
-                    <h3>seconds remaining</h3>
-                </div>
-                <div class="stats">
-                    <h2>Wins: <span class="win">0</span></h2>
-                    <h2>Losses: <span class="lose">0</span></h2>
-                </div>
-
-                </div>
-
-
-            </div>
-        </section>
-    </main> 
-        
+    <div class="quiz-container">
+        <div class="start-screen">
+            <h2>Welcome to the Quiz!</h2>
+            <button id="start-button">Start</button>
+        </div>
+        <div class="question">
+            <h2>Question 1</h2>
+            <ul class="answers">
+                <li><button data-correct="true">Correct Answer 1</button></li>
+                <li><button data-correct="false">Wrong Answer 1</button></li>
+                <li><button data-correct="false">Wrong Answer 2</button></li>
+                <li><button data-correct="false">Wrong Answer 3</button></li>
+            </ul>
+        </div>
+        <div class="question">
+            <h2>Question 2</h2>
+            <ul class="answers">
+                <li><button data-correct="true">Correct Answer 2</button></li>
+                <li><button data-correct="false">Wrong Answer 1</button></li>
+                <li><button data-correct="false">Wrong Answer 2</button></li>
+                <li><button data-correct="false">Wrong Answer 3</button></li>
+            </ul>
+        </div>
+        <div class="question">
+            <h2>Question 3</h2>
+            <ul class="answers">
+                <li><button data-correct="true">Correct Answer 3</button></li>
+                <li><button data-correct="false">Wrong Answer 1</button></li>
+                <li><button data-correct="false">Wrong Answer 2</button></li>
+                <li><button data-correct="false">Wrong Answer 3</button></li>
+            </ul>
+        </div>
+        <div class="question">
+            <h2>Question 4</h2>
+            <ul class="answers">
+                <li><button data-correct="true">Correct Answer 4</button></li>
+                <li><button data-correct="false">Wrong Answer 1</button></li>
+                <li><button data-correct="false">Wrong Answer 2</button></li>
+                <li><button data-correct="false">Wrong Answer 3</button></li>
+            </ul>
+        </div>
+        <div class="question">
+            <h2>Question 5</h2>
+            <ul class="answers">
+                <li><button data-correct="true">Correct Answer 5</button></li>
+                <li><button data-correct="false">Wrong Answer 1</button></li>
+                <li><button data-correct="false">Wrong Answer 2</button></li>
+                <li><button data-correct="false">Wrong Answer 3</button></li>
+            </ul>
+        </div>
+        <div class="timer">
+            Time left: <span id="timer-display">60</span> seconds
+        </div>
+        <div class="score">
+            Score: <span id="user-score">0</span>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
