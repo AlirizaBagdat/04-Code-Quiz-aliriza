@@ -31,7 +31,7 @@ body{
 }
 
 button {
-    background: #fdb44b; 
+    background: #ec610a; 
     border-radius: 8px;
     color: #13293d;
     cursor: pointer;
@@ -46,7 +46,7 @@ button {
 
 header {
     padding: 40px;
-    /* text-align: center; */
+    text-align: center;
     color: #fff;
     border-bottom:30px #879274;
     border: 5px solid #13293d; 
@@ -67,3 +67,20 @@ section {
     border-radius: 8px;
 }
 
+.questions {
+    width: 55vw;
+    height: 400px;
+}
+
+.results {
+    width: 30vw;
+    height: 400px;
+}
+
+.card {
+    background: #fdb44b;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    margin: auto;
+    padding: 20px;
+}
